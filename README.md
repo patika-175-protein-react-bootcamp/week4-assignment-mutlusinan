@@ -1,3 +1,6 @@
+Geçen hafta da aynısını yaşadım, render hızımda sıkıntı var o yüzden yanlış değerler geliyor ekrana. Geribildirimlerde sorunun sebebini anlatırsanız sevinirim.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
