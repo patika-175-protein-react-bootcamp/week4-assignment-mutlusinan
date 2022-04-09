@@ -1,0 +1,105 @@
+body {
+  background-color: #2d2d2d;
+  font-family: "Handlee";
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#finalScreen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#column1 > * {
+  font-size: 64px;
+  line-height: 85px;
+  margin-bottom: 50px;
+}
+
+#final {
+  font-size: 82px;
+  line-height: 109px;
+  color: #ff0000;
+  margin-bottom: 0;
+}
+
+#restartButton > * {
+  position: absolute;
+}
+
+#restartButton,
+#restartButton > * {
+  width: 447px;
+  height: 139px;
+}
+
+#restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.finalQuestion {
+  width: 250px;
+  font-size: 52px;
+  line-height: 69px;
+}
+
+.columnQuestion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#allQuestion {
+  font-size: 64px;
+  line-height: 85px;
+  color: #ff0000;
+  margin-bottom: 0;
+}
+#column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#column3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#columnQuestion,#columnMark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.problemFinal {
+    width: 250px;
+  font-size: 52px;
+  line-height: 69px;
+  }
+
+#finalScreen
+{
+    margin-top:3%;
+}
