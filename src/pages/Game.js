@@ -47,6 +47,20 @@ function Game() {
     questionArray = [];
   }, []);
 
+  useEffect(() => {
+    
+    let random1 = Math.floor(Math.random() * 3);
+    let random2 = (random1 + Math.floor(Math.random() * 2 + 1)) % 3;
+    let random3 = (3 - ((random1 + random2) % 3)) % 3;
+    let answerArray2 = [];
+    answerArray2[random1] = first * second;
+    answerArray2[random2] = (first - 1) * second;
+    answerArray2[random3] = (second + 1) * first;
+    setAnswerArray(answerArray2);
+    setQuestionPoint(Math.floor(Math.sqrt(first * second)));
+    console.log(answerArray);
+  },[first,second]);
+
   function newQuestion() {
     //Sayıları oluşturur
     setFirst(Math.floor(Math.random() * 8) + 2);
@@ -160,6 +174,7 @@ function Game() {
         </span>
       </div>
       <div className="answers">
+        
         <span className="answerBlock" id="answerBlock1">
           <AnswerLine fill={answer1 || "white"} />
           <span
